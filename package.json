@@ -1,0 +1,22 @@
+{
+  "name": "testcoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets es2015 src/index.js -o dist/index.js",
+    "start": "npm run build && node dist/index.js"
+  },
+  "author": "Nicholas Charette",
+  "license": "MIT",
+  "dependencies": {
+    "libp2p": "^0.27.2",
+    "libp2p-tcp": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
